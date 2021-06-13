@@ -37,7 +37,7 @@ package com.bridgelabz.datastructure;
     }
 	
    /**
-     * UC4: here by taking index value we are inserting data in between two
+     * UC4 and UC8 here by taking index value we are inserting data in between two
      * number.
      *
      * @param index

@@ -15,8 +15,10 @@ public class Runnable {
        
         LinkedList<Integer> list = new LinkedList<>();
         list.insert(56);
+        list.insert(30);
         list.insert(70);
-        list.searchList(70);
+        list.insertBetween(2,40);
+        list.showList();
     }
 }
 
