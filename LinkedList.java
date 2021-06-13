@@ -103,6 +103,36 @@ package com.bridgelabz.datastructure;
            secondLast.setNext(null);
     }
 	
+	/**
+     * @param data - uc7 elements to be searched in the list
+     * @returns position  of the element if it id present  in the list.
+     */
+   
+    public void searchList(T data) {
+          Node<T> current = head;  
+        int i = 1;  
+        boolean flag = false;  
+        //Checks whether list is empty  
+        if(head == null) {  
+            System.out.println("List is empty");  
+        }  
+        else {  
+            while(current != null) {  
+                 //Compares node to be found with each node present in the list  
+                if(current.getData() == data) {  
+                    flag = true;  
+                    break;  
+                }  
+                i++;  
+                current = current.getNext();  
+            }  
+        }  
+        if(flag)  
+             System.out.println("Element is present in the list at the position : " + i);  
+        else  
+             System.out.println("Element is not present in the list");  
+    }  
+	
 	
 /**
  * UC-2  traversing this list and printing the node value
