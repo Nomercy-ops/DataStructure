@@ -62,6 +62,21 @@ package com.bridgelabz.datastructure;
     }
 	
 	
+  /**
+     * uc5: method for removing first element of linkedlist..
+     *
+     */
+    public void deleteFirstElement() {
+
+        if (head.getNext() != null) {
+            head = head.getNext();
+        } else {
+            head = null;
+        }
+
+    }
+	
+	
 /**
  * UC-2  traversing this list and printing the node value
  * 

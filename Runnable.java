@@ -17,6 +17,7 @@ public class Runnable {
         list.insert(56);
         list.insert(70);
         list.insertBetween(1, 30); 
+        list.deleteFirstElement(0);
         list.showList();
     }
 }
