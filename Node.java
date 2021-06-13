@@ -4,15 +4,16 @@ package com.bridgelabz.datastructure;
  * 
  *  This is a node class and it is used to create the individual data holding blocks for linked list.
  *  Though it can hold any kind of data like,Integer ,String,etc. 
- *  @param <T> 
+ *  
  */ 
 
-public class Node<T> {
+public class Node {
 
    //Storing value of node
-    private  T data;
+    int data;
    // Storing address of next node
-    private Node<T> next;
+     Node next;
+  
 
  /**
    * Parameterized constructor to assign value
@@ -20,26 +21,10 @@ public class Node<T> {
    * @param data
    */ 
 
-    public Node(T data) {
+    public Node(int data) {
         this.data = data;
         this.next = null;
+        
     }
-
-    public T getData() {
-        return data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
-    }
-
-    public Node<T> getNext() {
-        return next;
-    }
-
-    public void setNext(Node<T> next) {
-        this.next = next;
-    }
-
     
   }
