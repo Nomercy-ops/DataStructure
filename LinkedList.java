@@ -14,8 +14,7 @@ package com.bridgelabz.datastructure;
 
     //starting node
    private Node<T> head;
-
-  /**
+/**
     * UC1: Method for inserting data into linked list.
     * @param data 
     * Here we first check that our node is empty or not if its empty then add data and make it as a head of node.
