@@ -1,5 +1,5 @@
 package com.bridgelabz.datastructure;
-package com.bridgelabz.datastructure;
+
 
 /**
  * This Runnable class have the main method for inserting removing and showing data of linked list.
@@ -10,8 +10,12 @@ package com.bridgelabz.datastructure;
 public class Runnable {
 
     public static void main(String[] args) {
-		Integer number1 = 56,number2 = 30,number3 = 70;
-        LinkedList<Integer> list = new LinkedList();
-
+       
+        LinkedList<Integer> list = new LinkedList<>();
+        list.insert(70);
+        list.insert(30);
+        list.insert(56);
+        list.showList();
     }
 }
+
