@@ -21,6 +21,7 @@ package com.bridgelabz.datastructure;
     * If the head node is not empty then it check for next node if its empty then add the data there otherwise loops will continue. 
 	*
     */
+	
    public void insert( T data) {
         Node<T> node = new Node(data);
         node.setData(data);
@@ -34,6 +35,32 @@ package com.bridgelabz.datastructure;
            newNode.setNext(node);
         }
     }
+	
+   /**
+     * UC4: here by taking index value we are inserting data in between two
+     * number.
+     *
+     * @param index
+     * @param data
+     */
+	 
+    public void insertBetween(int index, T data) {
+        Node<T> node = new Node(data);
+        node.setData(data);
+
+        if (index == 0) {
+            insert(data);
+        } else {
+            Node<T> newNode = head;
+            for (int i = 0; i < index - 1; i++) {
+                newNode = newNode.getNext();
+            }
+            node.setNext(newNode.getNext());
+            newNode.setNext(node);
+
+        }
+    }
+	
 	
 /**
  * UC-2  traversing this list and printing the node value
