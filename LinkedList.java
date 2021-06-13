@@ -61,19 +61,46 @@ package com.bridgelabz.datastructure;
         }
     }
 	
-	
   /**
-     * uc5: method for removing first element of linkedlist..
+   * uc5: method for removing number or data by putting index value.
+   * @param index 
+   */  
+ 
+    public void pop(int index) {
+     if (index == 0) {
+       head = head.getNext();
+     } else {
+       Node<T> node = head;
+       Node<T> newNode;
+       for (int i = 0; i < index - 1; i++) {
+        node = node.getNext();
+       }
+        newNode = node.getNext();
+        node.setNext(newNode.getNext());
+     }
+  
+   }
+   
+   /**
+     * uc6: method for removing last element of linked list.
      *
      */
-    public void deleteFirstElement() {
+    public void deleteLastElement() {
 
-        if (head.getNext() != null) {
-            head = head.getNext();
-        } else {
-            head = null;
+        if (head == null) {
+            System.out.println("List is empty..");
+        }
+        if (head.getNext() == null) {
+            System.out.println("There is no other element in list");
+        }
+        // Find the second last node
+        Node<T> secondLast = head;
+        while (secondLast.getNext().getNext() != null) {
+            secondLast = secondLast.getNext();
         }
 
+        // Change next of second last
+           secondLast.setNext(null);
     }
 	
 	

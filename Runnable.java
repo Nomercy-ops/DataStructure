@@ -13,11 +13,11 @@ public class Runnable {
 
     public static void main(String[] args) {
        
-        LinkedList<Integer> list = new LinkedList<>();
+         LinkedList<Integer> list = new LinkedList<>();
         list.insert(56);
         list.insert(70);
         list.insertBetween(1, 30); 
-        list.deleteFirstElement(0);
+        list.deleteLastElement();
         list.showList();
     }
 }
